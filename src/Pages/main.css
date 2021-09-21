@@ -1,0 +1,14 @@
+.h1{
+    text-transform: capitalize;
+    font-family: Calibri, serif;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+.h1 span{
+    color: #FD8E8E;
+}
+.text{
+    font-family: Calibri, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
