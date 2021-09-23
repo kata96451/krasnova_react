@@ -1,6 +1,7 @@
+import React from "react";
 import './header.css'
 
-export default function Header() {
+export default function Header({isLogin, toggleLogin}) {
     return <>
         <div className="container">
             <div className="headerContainer">
@@ -11,7 +12,14 @@ export default function Header() {
                 <div className="menu">
                     <button className="menu_button">about</button>
                     <button className="menu_button">my booking</button>
-                    <button className="menu_button">sing in</button>
+                    {
+                        isLogin ? (
+                            <>
+                                <span>Екатерина</span>
+                                <button className="menu_button" onClick={toggleLogin}>sing out</button>
+                            </>
+                        ) : <button className="menu_button" onClick={toggleLogin}>sign in</button>
+                    }
                 </div>
             </div>
 
