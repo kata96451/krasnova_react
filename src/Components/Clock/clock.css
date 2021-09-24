@@ -1,0 +1,7 @@
+
+.clock{
+    color: #535353;
+    font-family: Calibri, serif;
+    display: flex;
+    justify-content: center;
+}

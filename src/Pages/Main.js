@@ -2,14 +2,18 @@ import React, {useState} from "react";
 import './main.css'
 import Header from "../Components/Header/Header";
 import Form from "../Components/Form/Form"
+import Clock from "../Components/Clock/Clock";
+import ClockFunk from "../Components/Clock/ClockFunk";
+
 
 
 export default function MainPage() {
     const [isLogin, setIsLogin] = useState(false);
-    const toggleLogin = () =>{setIsLogin(!isLogin)}
+    const toggleLogin = () =>{setIsLogin(!isLogin)};
     return <>
         <Header isLogin={isLogin} toggleLogin={toggleLogin}/>
-
+        <Clock date={new Date()} />
+        <ClockFunk date={new Date()} />
         <Form />
         <main className="container">
             <h1 className="h1">travel with <span>booking</span></h1>
