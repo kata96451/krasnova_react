@@ -6,7 +6,7 @@ export default function Header({isLogin, toggleLogin}) {
         <div className="container">
             <div className="headerContainer">
                 <div className="logo">
-                    <div className="logo-img"></div>
+                    <div className="logo-img"/>
                     <div className="logo-name">Booking</div>
                 </div>
                 <div className="menu">
