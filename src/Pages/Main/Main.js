@@ -1,17 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import './main.css'
-import Header from "../Components/Header/Header";
-import Form from "../Components/Form/Form"
-import Clock from "../Components/Clock/Clock";
-import ClockFunk from "../Components/Clock/ClockFunk";
-
-
+import Form from "../../Components/Form/Form"
+import Clock from "../../Components/Clock/Clock";
+import ClockFunk from "../../Components/Clock/ClockFunk";
 
 export default function MainPage() {
-    const [isLogin, setIsLogin] = useState(false);
-    const toggleLogin = () =>{setIsLogin(!isLogin)};
     return <>
-        <Header isLogin={isLogin} toggleLogin={toggleLogin}/>
         <Clock date={new Date()} />
         <ClockFunk date={new Date()} />
         <Form />

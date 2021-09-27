@@ -42,7 +42,10 @@
     border-radius: 5px;
     box-shadow: 0 3px 5px 0 #A7A7A7;
 }
-
+.menu-list{
+    list-style-type: none;
+    display: flex;
+}
 @media (max-width: 1400px) {
     .container{
         padding: 0 15px;
