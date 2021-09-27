@@ -4,9 +4,9 @@ import './clock.css'
 export default function  ClockFunk(props)  {
          const {date} = props;
          const [stateDate, setStateDate] = useState(date);
-         const TimerId = setInterval(() => setStateDate(new Date()), 1000);
 
          useEffect( () => {
+             const TimerId = setInterval(() => setStateDate(new Date()), 1000);
              return () => {
                  clearInterval(TimerId)
              }
